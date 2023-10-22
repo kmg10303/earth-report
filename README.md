@@ -1,5 +1,8 @@
-# Getting Started with Create React App
+# IMPORTANT: SEE API REPO BELOW
+[GlobeGlance API](https://github.com/bkushmakov/earthdashboard-api)
 
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
