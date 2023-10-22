@@ -24,7 +24,7 @@ export default function App() {
   const [data, setData] = useState([]);
   const [boxData, setBoxData] = useState([]);
   const [globalData, setGlobalData] = useState([]);
-  const url = 'http://10.147.17.24:8000/';
+  const url = 'https://api.globeglance.co/';
   const [health, setHealth] = useState(100);
   const threshold = .25;
   const [isShown, setIsShown] = useState(false);
