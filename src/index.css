@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  font-size: 15px;
+  /* color: #e5e5e5; */
+  font-family: 'Helvetica';
+  background-image:
+    radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 2px),
+    radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 2px),
+    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 2px),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 1px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+  /* Adjust the height to fit your map */
+  position: relative;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 1px;
+  /* Adjust the vertical position */
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.0);
+  pointer-events: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* or row, based on your desired layout */
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.0);
+  pointer-events: none;
+  justify-content: center;
+}
+
+.flex-item {
+  margin-top: 10.8vh;
+  flex: 2;
+  background: rgba(0, 0, 0, 0.0);
+  /* Make the flex items transparent */
+}
+
+.space-holder {
+  text-align: center;
+  flex: 2;
+  margin-top: 4vh;
+  padding-right: 20px;
+}
+
+.left-box {
+  text-align: center;
+  padding: 0;
+  margin-top: 6vh;
+}
+
+.right-box {
+  text-align: center;
+  padding: 0;
+  margin-top: 6vh;
+  margin-right: 3vh;
+}
+
+.switch {
+  pointer-events: all;
+}
+
+.loading,
+.right-box button {
+  position: relative;
+  pointer-events: all;
+  width: auto;
+  height: inherit;
+  margin-top: 30px;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.loading {
+  margin: 0;
+  font-weight: bold;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 2vh;
+  line-height: 0px;
+  clip-path: inset(0 3ch 0 0);
+  animation: l 1s steps(4) infinite;
+  pointer-events: none;
+}
+
+@keyframes l {
+  to {
+    clip-path: inset(0 -1ch 0 0)
+  }
+}
+
+.right-box h2,
+.left-box h2 {
+  font-size: 25px;
+}
+
+.right-box h3,
+.left-box h3 {
+  font-size: 20px;
+  color: #fca311;
+}
+
+.progress-bar {
+  background-color: white;
+  width: 100%;
+  height: 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.progress {
+  float: left;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #e5e5e5;
+}
+
+.list-parent {
+  background-color: rgba(100, 100, 100, 0.0);
+  padding-bottom: 15px;
+  padding: 5px;
+}
+
+.value {
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0;
+  padding-left: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.data-header {
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.data {
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.more-info {
+  height: 8vh;
+  display: grid;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.more-info label {
+  line-height: 0;
+  font-size: 2vh;
+  padding-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.down-arrow {
+  margin: 0;
+  padding: 0;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.down-arrow:hover {
+  color: grey;
+  width: 100%;
+}
+
+.stats {
+  margin-top: 15px;
+  display: grid;
+  justify-content: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.4);
+  border-radius: 50%;
+  height: 115px;
+  width: 115px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stat .stat-name {
+  font-size: auto;
+  text-transform: uppercase;
+}
+
+.stat .stat-info {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.stat .stat-number {
+  padding-left: 5px;
+  font-size: auto;
+}
+
+.stat .stat-unit {
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+.background-block {
+  background-color: rgba(100, 100, 100, 0.4);
+  padding: 10px;
+}
+
+.dropdown {
+  pointer-events: all;
+  height: 20px;
+  margin-top: 14vh;
+  margin-left: 15px;
+}
+
+.inrow {
+  display: flex;
+  flex-direction: row;
+  pointer-events: all;
+  cursor: pointer;
+  padding-left: 6px;
+}
+
+.zoom-more {
+  font-size: 20px;
+}
