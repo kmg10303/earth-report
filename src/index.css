@@ -165,8 +165,11 @@
 }
 
 .data {
-  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 14px;
   padding-left: 5px;
+  text-align: left;
+  padding-bottom: 5px;
 }
 
 .more-info {
@@ -208,7 +211,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: rgba(14, 14, 14, 0.4);
   border-radius: 50%;
   height: 115px;
   width: 115px;
@@ -238,7 +241,7 @@
 }
 
 .background-block {
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: rgba(14, 14, 14, 0.4);
   padding: 10px;
 }
 

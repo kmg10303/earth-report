@@ -1,8 +1,6 @@
 import React, { Component, useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import axios from 'axios';
-import { ChevronDownOutline } from 'react-ionicons'
-import { ChevronUpOutline } from 'react-ionicons'
 //import Dropdown from 'react-dropdown';
 //import 'react-dropdown/style.css';
 import '@fontsource/roboto/300.css';
